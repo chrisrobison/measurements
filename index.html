@@ -6,7 +6,7 @@
     <title></title>
     <style>
         body {
-            font-family: "Helvetica Neue", "Helvetica", sans-serif;
+            font-family: "Lexend", "Helvetica Neue", "Helvetica", sans-serif;
             margin: 0;
             padding: 0;
             font-size: 14px;
@@ -26,17 +26,81 @@
             display: flex;
         }
 
-        footer {
-            background-color: #666;
-            color: #eee;
-            height: 0vh;
+        #dummy {
+            display: inline-block;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            background-color: #fffa;
+            object-fit: contain;
+            border: 1px solid #fff;
+        }
+
+        td {
+            white-space: nowrap;
+        }
+
+        #measureImage {
+            object-fit: contain;
+            height: 100vh;
+        }
+
+        #dummyWrap {
+            position: relative;
+            background-color: #0ac;
+            height: 100vh;
+        }
+
+        .line {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        #measurements {
+            display: flex;
+            padding: 1em;
+            border: 1px solid #aaa;
+        }
+
+        .title {
+            position: absolute;
+            top: 0em;
+            left: 0em;
+            width: 100%;
+            height: 1em;
+            font-size: 32px;
+            font-weight: bold;
+            background-color: #fffa;
+            padding: .25em 1em .5em;
+            color: #000;
+            text-transform: capitalize;
+
         }
     </style>
 </head>
 
 <body>
-    <main></main>
+    <header></header>
+    <main>
+        <table id='measurements'>
+            <tbody id='measurementsBody'>
+                <tr>
+                    <td>Gender</td>
+                    <td><select onchange='app.switchGender(this.options[this.selectedIndex].value)' id='gender'>
+                            <option value='male'>Male</option>
+                            <option value='female'>Female</option>
+                        </select></td>
+                </tr>
+            </tbody>
+        </table>
+        <div id='dummy'>
+            <img src='measurements_male.png' id='measureImage'>
+            <div class='title'></div>
+        </div>
+    </main>
 
+    <footer></footer>
     <script>
         //function $(str) { return document.querySelector(str); }
         const $ = (str) => document.querySelector(str);
@@ -53,17 +117,83 @@
                     });
                 },
                 state: {
-                    loaded: false
+                    loaded: false,
+                    sex: 'male'
                 },
                 config: {
                     measurements: []
                 },
                 measurementTable: function() {
-
-                    app.config.measurements.forEach((item, idx) => {
+                    let out = "";
+                    let dummy = $("#dummy");
+                    let img = $("#measureImage");
+                    let dy = img.height / 1242;
+                    let dx = img.width / 1411;
+                    app.config.measurements[app.state.sex].forEach((item, idx) => {
                         console.dir(item);
+                        out += `<tr id='row_${item.id}'><td id='name_${item.id}'>${item.name}</td><td id='value_${item.id}'><input type='text' id='input_${item.id}'></td></tr>`;
+                        let img = new Image(item.overlaySize.width * dx, item.overlaySize.height * dy);
+                        img.src = app.state.sex + '/' + item.overlayImage;
+                        img.className = 'line';
+                        img.id = `line_${item.id}`;
+
+                        img.style.top = item.overlayCoord.y * dy + 'px';
+                        img.style.left = item.overlayCoord.x * dx + 'px';
+                        img.addEventListener("mouseover", app.lineOver);
+                        img.addEventListener("mouseout", app.lineOver);
+                        dummy.appendChild(img);
                     });
+                    $("#measurementsBody").innerHTML += out;
+                    $("#measurements").addEventListener("mouseover", app.doOver);
+                    $("#measurements").addEventListener("mouseout", app.doOut);
+                    $("#measurements").addEventListener("focus", app.doFocus, true);
+                    $("#measurements").addEventListener("blur", app.doFocus, true);
                 },
+                doFocus: function(e) {
+                    console.dir(e);
+                    let match;
+                    if (match = e.target.id.match(/(input)_(.*)/)) {
+                        if (e.type === 'focus') {
+                            app.state.focus = match[2];
+                            $(".title").innerHTML = match[2].replace(/\-/g, ' ');
+                        } else {
+                            app.state.focus = null;
+                            $(".title").innerHTML = '';
+
+                        }
+                    }
+                },
+                lineOver: function(e) {
+                    if (e.type === 'mouseover') {
+                        e.target.style.visibility = "visible";
+
+                    } else if (e.type === 'mouseout') {
+                        e.target.style.visibility = "hidden";
+                    }
+                },
+                doOver: function(e) {
+                    let match;
+                    if (match = e.target.id.match(/(name|value|input)_(.*)/)) {
+                        $(`#line_${match[2]}`).style.visibility = "visible";
+
+                        $(".title").innerHTML = match[2].replace(/\-/g, ' ');
+                    }
+
+                },
+                doOut: function(e) {
+                    let match;
+                    if (match = e.target.id.match(/(name|value|input)_(.*)/)) {
+                        if (match[2] !== app.state.focus) {
+                            $(`#line_${match[2]}`).style.visibility = "hidden";
+                            $(".title").innerHTML = (app.state.focus) ? app.state.focus.replace(/\-/g, ' ') : '';
+                        }
+                    }
+
+                },
+                switchGender: function(sex) {
+                    $("#measureImage").src = `measurements_${sex}.png`;
+                    app.state.sex = sex;
+                }
             }
             window.app = app;
             app.init();
