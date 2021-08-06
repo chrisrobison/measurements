@@ -1,249 +1,498 @@
-[{
-    {
-        "Name": "Neck",
-        "Value": "",
-        "overlayImage": "neck.png",
-        "overlayCoord": {
-            "x": 228,
-            "y": 154
+{
+    "male": [{
+            "Name": "Neck",
+            "Value": "",
+            "overlayImage": "neck.png",
+            "overlayCoord": {
+                "x": 228,
+                "y": 154
+            },
+            "overlaySize": {
+                "width": 1101,
+                "height": 73
+            }
         },
-        "overlaySize": {
-            "width": 1101,
-            "height":73 
-        }
-    },
-    {
-        "Name": "Chest",
-        "Value": "",
-        "overlayImage": "chest.png",
-        "overlayCoord": {
-            "x": 148,
-            "y": 310
+        {
+            "Name": "Chest",
+            "Value": "",
+            "overlayImage": "chest.png",
+            "overlayCoord": {
+                "x": 148,
+                "y": 310
+            },
+            "overlaySize": {
+                "width": 1192,
+                "height": 55
+            }
         },
-        "overlaySize": {
-            "width": 1192,
-            "height":55 
-        }
-    },
-    {
-        "Name": "Waist",
-        "Value": "",
-        "overlayImage": "waist.png",
-        "overlayCoord": {
-            "x": 171,
-            "y": 446
+        {
+            "Name": "Waist",
+            "Value": "",
+            "overlayImage": "waist.png",
+            "overlayCoord": {
+                "x": 171,
+                "y": 446
+            },
+            "overlaySize": {
+                "width": 1139,
+                "height": 85
+            }
         },
-        "overlaySize": {
-            "width": 1139,
-            "height": 85 
-        }
-    },
-    {
-        "Name": "Hips",
-        "Value": "",
-        "overlayImage": "hips.png",
-        "overlayCoord": {
-            "x": 154,
-            "y": 527
+        {
+            "Name": "Hips",
+            "Value": "",
+            "overlayImage": "hips.png",
+            "overlayCoord": {
+                "x": 154,
+                "y": 527
+            },
+            "overlaySize": {
+                "width": 1183,
+                "height": 84
+            }
         },
-        "overlaySize": {
-            "width": 1183,
-            "height":84 
-        }
-    },
-    {
-        "Name": "Neck to Top-of-heel",
-        "Value": "",
-        "overlayImage": "neck2heel.png",
-        "overlayCoord": {
-            "x": 795,
-            "y": 209
+        {
+            "Name": "Neck to Top-of-heel",
+            "Value": "",
+            "overlayImage": "neck2heel.png",
+            "overlayCoord": {
+                "x": 795,
+                "y": 209
+            },
+            "overlaySize": {
+                "width": 575,
+                "height": 936
+            }
         },
-        "overlaySize": {
-            "width": 575,
-            "height": 936
-        }
-    },
-    {
-        "Name": "Top of Knee to ankle",
-        "Value": "",
-        "overlayImage": "knee2ankle.png",
-        "overlayCoord": {
-            "x": 145,
-            "y": 865
+        {
+            "Name": "Top of Knee to ankle",
+            "Value": "",
+            "overlayImage": "knee2ankle.png",
+            "overlayCoord": {
+                "x": 145,
+                "y": 865
+            },
+            "overlaySize": {
+                "width": 1128,
+                "height": 293
+            }
         },
-        "overlaySize": {
-            "width": 1128,
-            "height":293 
-        }
-    },
-    {
-        "Name": "Shoulder seam to wrist",
-        "Value": "",
-        "overlayImage": "shoulder2wrist.png",
-        "overlayCoord": {
-            "x": 33,
-            "y": 213
+        {
+            "Name": "Shoulder seam to wrist",
+            "Value": "",
+            "overlayImage": "shoulder2wrist.png",
+            "overlayCoord": {
+                "x": 33,
+                "y": 213
+            },
+            "overlaySize": {
+                "width": 1289,
+                "height": 385
+            }
         },
-        "overlaySize": {
-            "width": 1289,
-            "height":385 
-        }
-    },
-    {
-        "Name": "Shoulder seam to neck",
-        "Value": "",
-        "overlayImage": "shoulder2neck.png",
-        "overlayCoord": {
-            "x": 322,
-            "y": 200
+        {
+            "Name": "Shoulder seam to neck",
+            "Value": "",
+            "overlayImage": "shoulder2neck.png",
+            "overlayCoord": {
+                "x": 322,
+                "y": 200
+            },
+            "overlaySize": {
+                "width": 997,
+                "height": 83
+            }
         },
-        "overlaySize": {
-            "width": 997,
-            "height": 83 
-        }
-    },
-    {
-        "Name": "Arm Hole",
-        "Value": "",
-        "overlayImage": "armhole.png",
-        "overlayCoord": {
-            "x": 37,
-            "y": 219
+        {
+            "Name": "Arm Hole",
+            "Value": "",
+            "overlayImage": "armhole.png",
+            "overlayCoord": {
+                "x": 37,
+                "y": 219
+            },
+            "overlaySize": {
+                "width": 1304,
+                "height": 157
+            }
         },
-        "overlaySize": {
-            "width": 1304,
-            "height": 157
-        }
-    },
-    {
-        "Name": "Bicep",
-        "Value": "",
-        "overlayImage": "bicep.png",
-        "overlayCoord": {
-            "x": 16,
-            "y": 307
+        {
+            "Name": "Bicep",
+            "Value": "",
+            "overlayImage": "bicep.png",
+            "overlayCoord": {
+                "x": 16,
+                "y": 307
+            },
+            "overlaySize": {
+                "width": 1312,
+                "height": 76
+            }
         },
-        "overlaySize": {
-            "width": 1312,
-            "height":76 
-        }
-    },
-    {
-        "Name": "Forearm",
-        "Value": "",
-        "overlayImage": "forearm.png",
-        "overlayCoord": {
-            "x": 0,
-            "y": 490
+        {
+            "Name": "Forearm",
+            "Value": "",
+            "overlayImage": "forearm.png",
+            "overlayCoord": {
+                "x": 0,
+                "y": 490
+            },
+            "overlaySize": {
+                "width": 1312,
+                "height": 76
+            }
         },
-        "overlaySize": {
-            "width": 1312,
-            "height":76 
-        }
-    },
-    {
-        "Name": "Wrist around",
-        "Value": "",
-        "overlayImage": "wrist.png",
-        "overlayCoord": {
-            "x": 433,
-            "y": 575
+        {
+            "Name": "Wrist around",
+            "Value": "",
+            "overlayImage": "wrist.png",
+            "overlayCoord": {
+                "x": 433,
+                "y": 575
+            },
+            "overlaySize": {
+                "width": 800,
+                "height": 46
+            }
         },
-        "overlaySize": {
-            "width": 800,
-            "height": 46
-        }
-    },
-    {
-        "Name": "Top of shoulder to waist",
-        "Value": "",
-        "overlayImage": "shoulder2waist.png",
-        "overlayCoord": {
-            "x": 315,
-            "y": 235
+        {
+            "Name": "Top of shoulder to waist",
+            "Value": "",
+            "overlayImage": "shoulder2waist.png",
+            "overlayCoord": {
+                "x": 315,
+                "y": 235
+            },
+            "overlaySize": {
+                "width": 948,
+                "height": 352
+            }
         },
-        "overlaySize": {
-            "width": 948,
-            "height": 352 
-        }
-    },
-    {
-        "Name": "Inseam",
-        "Value": "",
-        "overlayImage": "inseam.png",
-        "overlayCoord": {
-            "x": 281,
-            "y": 682
+        {
+            "Name": "Inseam",
+            "Value": "",
+            "overlayImage": "inseam.png",
+            "overlayCoord": {
+                "x": 281,
+                "y": 682
+            },
+            "overlaySize": {
+                "width": 573,
+                "height": 512
+            }
         },
-        "overlaySize": {
-            "width": 573,
-            "height": 512 
-        }
-    },
-    {
-        "Name": "Outseam",
-        "Value": "",
-        "overlayImage": "outseam.png",
-        "overlayCoord": {
-            "x": 274,
-            "y": 678
+        {
+            "Name": "Outseam",
+            "Value": "",
+            "overlayImage": "outseam.png",
+            "overlayCoord": {
+                "x": 274,
+                "y": 678
+            },
+            "overlaySize": {
+                "width": 976,
+                "height": 600
+            }
         },
-        "overlaySize": {
-            "width": 976,
-            "height": 600
-        }
-    },
-    {
-        "Name": "Under crotch from waist",
-        "Value": "",
-        "overlayImage": "crotch.png",
-        "overlayCoord": {
-            "x": 265,
-            "y": 506
+        {
+            "Name": "Under crotch from waist",
+            "Value": "",
+            "overlayImage": "crotch.png",
+            "overlayCoord": {
+                "x": 265,
+                "y": 506
+            },
+            "overlaySize": {
+                "width": 1097,
+                "height": 211
+            }
         },
-        "overlaySize": {
-            "width": 1097,
-            "height": 211
-        }
-    },
-    {
-        "Name": "Shoulder seam to shoulder seam",
-        "Value": "",
-        "overlayImage": "shoulder2shoulder.png",
-        "overlayCoord": {
-            "x": 745,
-            "y": 251
+        {
+            "Name": "Shoulder seam to shoulder seam",
+            "Value": "",
+            "overlayImage": "shoulder2shoulder.png",
+            "overlayCoord": {
+                "x": 745,
+                "y": 251
+            },
+            "overlaySize": {
+                "width": 200,
+                "height": 40
+            }
         },
-        "overlaySize": {
-            "width": 200,
-            "height": 40
-        }
-    },
-    {
-        "Name": "Height",
-        "Value": "",
-        "overlayImage": "height.png",
-        "overlayCoord": {
-            "x": 427,
-            "y": 42
+        {
+            "Name": "Height",
+            "Value": "",
+            "overlayImage": "height.png",
+            "overlayCoord": {
+                "x": 427,
+                "y": 42
+            },
+            "overlaySize": {
+                "width": 730,
+                "height": 1187
+            }
         },
-        "overlaySize": {
-            "width": 730,
-            "height": 1187 
+        {
+            "Name": "Weight",
+            "Value": "",
+            "overlayImage": "weight.png",
+            "overlayCoord": {
+                "x": 448,
+                "y": 865
+            },
+            "overlaySize": {
+                "width": 227,
+                "height": 227
+            }
         }
-    },
-    {
-        "Name": "Weight",
-        "Value": "",
-        "overlayImage": "weight.png",
-        "overlayCoord": {
-            "x": 448,
-            "y": 865
+    ],
+    "female": [{
+            "Name": "Neck",
+            "Value": "",
+            "overlayImage": "neck.png",
+            "overlayCoord": {
+                "x": 228,
+                "y": 154
+            },
+            "overlaySize": {
+                "width": 1101,
+                "height": 73
+            }
         },
-        "overlaySize": {
-            "width": 227,
-            "height": 227 
+        {
+            "Name": "Chest",
+            "Value": "",
+            "overlayImage": "chest.png",
+            "overlayCoord": {
+                "x": 148,
+                "y": 310
+            },
+            "overlaySize": {
+                "width": 1192,
+                "height": 55
+            }
+        },
+        {
+            "Name": "Waist",
+            "Value": "",
+            "overlayImage": "waist.png",
+            "overlayCoord": {
+                "x": 171,
+                "y": 446
+            },
+            "overlaySize": {
+                "width": 1139,
+                "height": 85
+            }
+        },
+        {
+            "Name": "Hips",
+            "Value": "",
+            "overlayImage": "hips.png",
+            "overlayCoord": {
+                "x": 154,
+                "y": 527
+            },
+            "overlaySize": {
+                "width": 1183,
+                "height": 84
+            }
+        },
+        {
+            "Name": "Neck to Top-of-heel",
+            "Value": "",
+            "overlayImage": "neck2heel.png",
+            "overlayCoord": {
+                "x": 795,
+                "y": 209
+            },
+            "overlaySize": {
+                "width": 575,
+                "height": 936
+            }
+        },
+        {
+            "Name": "Top of Knee to ankle",
+            "Value": "",
+            "overlayImage": "knee2ankle.png",
+            "overlayCoord": {
+                "x": 145,
+                "y": 865
+            },
+            "overlaySize": {
+                "width": 1128,
+                "height": 293
+            }
+        },
+        {
+            "Name": "Shoulder seam to wrist",
+            "Value": "",
+            "overlayImage": "shoulder2wrist.png",
+            "overlayCoord": {
+                "x": 33,
+                "y": 213
+            },
+            "overlaySize": {
+                "width": 1289,
+                "height": 385
+            }
+        },
+        {
+            "Name": "Shoulder seam to neck",
+            "Value": "",
+            "overlayImage": "shoulder2neck.png",
+            "overlayCoord": {
+                "x": 322,
+                "y": 200
+            },
+            "overlaySize": {
+                "width": 997,
+                "height": 83
+            }
+        },
+        {
+            "Name": "Arm Hole",
+            "Value": "",
+            "overlayImage": "armhole.png",
+            "overlayCoord": {
+                "x": 37,
+                "y": 219
+            },
+            "overlaySize": {
+                "width": 1304,
+                "height": 157
+            }
+        },
+        {
+            "Name": "Bicep",
+            "Value": "",
+            "overlayImage": "bicep.png",
+            "overlayCoord": {
+                "x": 16,
+                "y": 307
+            },
+            "overlaySize": {
+                "width": 1312,
+                "height": 76
+            }
+        },
+        {
+            "Name": "Forearm",
+            "Value": "",
+            "overlayImage": "forearm.png",
+            "overlayCoord": {
+                "x": 0,
+                "y": 490
+            },
+            "overlaySize": {
+                "width": 1312,
+                "height": 76
+            }
+        },
+        {
+            "Name": "Wrist around",
+            "Value": "",
+            "overlayImage": "wrist.png",
+            "overlayCoord": {
+                "x": 433,
+                "y": 575
+            },
+            "overlaySize": {
+                "width": 800,
+                "height": 46
+            }
+        },
+        {
+            "Name": "Top of shoulder to waist",
+            "Value": "",
+            "overlayImage": "shoulder2waist.png",
+            "overlayCoord": {
+                "x": 315,
+                "y": 235
+            },
+            "overlaySize": {
+                "width": 948,
+                "height": 352
+            }
+        },
+        {
+            "Name": "Inseam",
+            "Value": "",
+            "overlayImage": "inseam.png",
+            "overlayCoord": {
+                "x": 281,
+                "y": 682
+            },
+            "overlaySize": {
+                "width": 573,
+                "height": 512
+            }
+        },
+        {
+            "Name": "Outseam",
+            "Value": "",
+            "overlayImage": "outseam.png",
+            "overlayCoord": {
+                "x": 274,
+                "y": 678
+            },
+            "overlaySize": {
+                "width": 976,
+                "height": 600
+            }
+        },
+        {
+            "Name": "Under crotch from waist",
+            "Value": "",
+            "overlayImage": "crotch.png",
+            "overlayCoord": {
+                "x": 265,
+                "y": 506
+            },
+            "overlaySize": {
+                "width": 1097,
+                "height": 211
+            }
+        },
+        {
+            "Name": "Shoulder seam to shoulder seam",
+            "Value": "",
+            "overlayImage": "shoulder2shoulder.png",
+            "overlayCoord": {
+                "x": 745,
+                "y": 251
+            },
+            "overlaySize": {
+                "width": 200,
+                "height": 40
+            }
+        },
+        {
+            "Name": "Height",
+            "Value": "",
+            "overlayImage": "height.png",
+            "overlayCoord": {
+                "x": 427,
+                "y": 42
+            },
+            "overlaySize": {
+                "width": 730,
+                "height": 1187
+            }
+        },
+        {
+            "Name": "Weight",
+            "Value": "",
+            "overlayImage": "weight.png",
+            "overlayCoord": {
+                "x": 448,
+                "y": 865
+            },
+            "overlaySize": {
+                "width": 227,
+                "height": 227
+            }
         }
-    }
-}]
+    ]
+}
